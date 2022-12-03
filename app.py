@@ -20,7 +20,7 @@ cities = ['Hyderabad', 'Bangalore', 'Mumbai', 'Indore', 'Kolkata', 'Delhi',
 
 st.title('IPL Win Predictor')
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 with col1:
     batting_team = st.selectbox('Select the batting team',sorted(teams))
@@ -31,7 +31,7 @@ selected_city = st.selectbox('Select host city',sorted(cities))
 
 target = st.number_input('Target')
 
-col3,col4,col5 = st.beta_columns(3)
+col3,col4,col5 = st.columns(3)
 
 with col3:
     score = st.number_input('Score')
